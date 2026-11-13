@@ -1,0 +1,47 @@
+{
+  "config": {
+    "sample_rate": 16000,
+    "n_fft": 512,
+    "hop": 128,
+    "filter_order": 4,
+    "lowpass_hz": 3500.0,
+    "highpass_hz": 100.0,
+    "bandstop_hz": [
+      950.0,
+      1050.0
+    ],
+    "basic_stages": [
+      "highpass",
+      "lowpass",
+      "bandstop"
+    ],
+    "noise_fraction": 0.2,
+    "subtraction_alpha": 1.5,
+    "subtraction_floor": 0.02,
+    "wiener_smoothing": 0.98,
+    "wiener_gain_floor": 0.05
+  },
+  "python": "3.13.18",
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.16.3",
+    "soundfile": "0.14.0",
+    "pandas": "2.2.3",
+    "pesq": "0.0.4"
+  },
+  "split": "validation",
+  "evaluated_files": 164,
+  "methods": [
+    "noisy_input",
+    "basic_filter",
+    "spectral_subtraction",
+    "wiener_filter",
+    "lowpass",
+    "highpass",
+    "bandstop"
+  ],
+  "pesq_mode": "wb",
+  "common_pesq_files": 164,
+  "snr": "10*log10(sum(clean**2)/sum((clean-output)**2)); no level alignment",
+  "aggregation": "unweighted arithmetic mean across files"
+}

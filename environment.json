@@ -1,0 +1,23 @@
+{
+  "colab_runtime": "2026.10",
+  "python_version": "3.13.18",
+  "python_full_version": "3.13.18 (main, Oct 26 2026, 15:28:15) [GCC 13.3.0]",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.16.3",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.0",
+    "soundfile": "0.14.0",
+    "pesq": null,
+    "tqdm": "4.67.3",
+    "ipywidgets": "7.7.1",
+    "ipython": "7.34.0"
+  },
+  "validation": {
+    "train_files": 1296,
+    "validation_files": 164,
+    "baseline_evaluation": "completed",
+    "evaluation_notebook": "02_baseline_comparison.ipynb"
+  }
+}
